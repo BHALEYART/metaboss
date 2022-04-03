@@ -242,9 +242,6 @@ pub fn snapshot_holders(
                     let associated_token_address = associated_token_address.to_string();
                     let holder = Holder {
                         owner_wallet,
-                        associated_token_address,
-                        mint_account: metadata.mint.to_string(),
-                        metadata_account: metadata_pubkey.to_string(),
                     };
                     nft_holders.lock().unwrap().push(holder);
                 }
