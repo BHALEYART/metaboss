@@ -37,9 +37,6 @@ use crate::{constants::*, decode::get_metadata_pda};
 #[derive(Debug, Serialize, Clone)]
 struct Holder {
     owner_wallet: String,
-    associated_token_address: String,
-    mint_account: String,
-    metadata_account: String,
 }
 
 #[derive(Debug, Serialize)]
